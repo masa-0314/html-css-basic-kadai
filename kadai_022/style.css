@@ -1,5 +1,5 @@
-body {
-  margin: 0;
+body, h1, p {
+  margin: 0px;
 }
 
 p, a {
@@ -43,7 +43,7 @@ h2::before {
   color: rgb(239, 111, 139);
 }
 
-p:nth-child(3)::first-letter {
+.contents p:nth-of-type(2)::first-letter {
   font-weight: bold;
   color: rgb(97, 206, 249);
 }
@@ -78,8 +78,9 @@ a:hover {
   p {
     font-size: 25px;
   }
-  
+
   #parent {
     display: block;
+    flex-direction: column;
   }
 }
